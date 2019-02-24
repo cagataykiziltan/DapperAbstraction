@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModelFirst.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelFirstStoreContainer">
+    <EntitySet Name="OgrenciSet" EntityType="ModelFirst.Store.OgrenciSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DersSet" EntityType="ModelFirst.Store.DersSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OgrenciDersleriSet" EntityType="ModelFirst.Store.OgrenciDersleriSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="OgrenciOgrenciDersleri" Association="ModelFirst.Store.OgrenciOgrenciDersleri">
+      <End Role="Ogrenci" EntitySet="OgrenciSet" />
+      <End Role="OgrenciDersleri" EntitySet="OgrenciDersleriSet" />
+    </AssociationSet>
+    <AssociationSet Name="DersOgrenciDersleri" Association="ModelFirst.Store.DersOgrenciDersleri">
+      <End Role="Ders" EntitySet="DersSet" />
+      <End Role="OgrenciDersleri" EntitySet="OgrenciDersleriSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OgrenciSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Soyadı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TCKimlikNo" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DersSet">
+    <Key>
+      <PropertyRef Name="DersId" />
+    </Key>
+    <Property Name="DersId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DersAdı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SınıfSeviyesi" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OgrenciDersleriSet">
+    <Key>
+      <PropertyRef Name="OgrenciId" />
+      <PropertyRef Name="DersId" />
+    </Key>
+    <Property Name="OgrenciId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DersId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ogrenci_Id" Type="int" Nullable="false" />
+    <Property Name="Ders_DersId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="OgrenciOgrenciDersleri">
+    <End Role="Ogrenci" Type="ModelFirst.Store.OgrenciSet" Multiplicity="1" />
+    <End Role="OgrenciDersleri" Type="ModelFirst.Store.OgrenciDersleriSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenci">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OgrenciDersleri">
+        <PropertyRef Name="Ogrenci_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DersOgrenciDersleri">
+    <End Role="Ders" Type="ModelFirst.Store.DersSet" Multiplicity="1" />
+    <End Role="OgrenciDersleri" Type="ModelFirst.Store.OgrenciDersleriSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="DersId" />
+      </Principal>
+      <Dependent Role="OgrenciDersleri">
+        <PropertyRef Name="Ders_DersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelFirstStoreContainer" CdmEntityContainer="ModelFirstContainer">
+    <EntitySetMapping Name="OgrenciSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirst.Ogrenci)">
+        <MappingFragment StoreEntitySet="OgrenciSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adı" ColumnName="Adı" />
+          <ScalarProperty Name="Soyadı" ColumnName="Soyadı" />
+          <ScalarProperty Name="TCKimlikNo" ColumnName="TCKimlikNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DersSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirst.Ders)">
+        <MappingFragment StoreEntitySet="DersSet">
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="DersAdı" ColumnName="DersAdı" />
+          <ScalarProperty Name="SınıfSeviyesi" ColumnName="SınıfSeviyesi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciDersleriSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirst.OgrenciDersleri)">
+        <MappingFragment StoreEntitySet="OgrenciDersleriSet">
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="OgrenciOgrenciDersleri" TypeName="ModelFirst.OgrenciOgrenciDersleri" StoreEntitySet="OgrenciDersleriSet">
+      <EndProperty Name="Ogrenci">
+        <ScalarProperty Name="Id" ColumnName="Ogrenci_Id" />
+      </EndProperty>
+      <EndProperty Name="OgrenciDersleri">
+        <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+        <ScalarProperty Name="DersId" ColumnName="DersId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DersOgrenciDersleri" TypeName="ModelFirst.DersOgrenciDersleri" StoreEntitySet="OgrenciDersleriSet">
+      <EndProperty Name="Ders">
+        <ScalarProperty Name="DersId" ColumnName="Ders_DersId" />
+      </EndProperty>
+      <EndProperty Name="OgrenciDersleri">
+        <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+        <ScalarProperty Name="DersId" ColumnName="DersId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,8 @@
+c:\users\lenovo\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\EntityFrameworkYaklasımlari.exe.config
+c:\users\lenovo\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\EntityFrameworkYaklasımlari.exe
+c:\users\lenovo\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\EntityFrameworkYaklasımlari.pdb
+c:\users\lenovo\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\EntityFrameworkYaklasımlari.csprojResolveAssemblyReference.cache
+c:\users\lenovo\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\EntityFrameworkYaklasımlari.exe
+c:\users\lenovo\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\EntityFrameworkYaklasımlari.pdb
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\Dapper.dll
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\Dapper.xml

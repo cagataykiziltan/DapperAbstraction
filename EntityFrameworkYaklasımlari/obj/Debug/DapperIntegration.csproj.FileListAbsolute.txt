@@ -1,0 +1,8 @@
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\DapperIntegration.exe.config
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\DapperIntegration.exe
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\DapperIntegration.pdb
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\Dapper.dll
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\bin\Debug\Dapper.xml
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\DapperIntegration.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\DapperIntegration.exe
+C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\DapperIntegration.pdb

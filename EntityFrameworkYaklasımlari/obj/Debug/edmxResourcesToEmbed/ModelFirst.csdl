@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelFirst" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ModelFirstContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OgrenciSet" EntityType="ModelFirst.Ogrenci" />
+    <EntitySet Name="DersSet" EntityType="ModelFirst.Ders" />
+    <EntitySet Name="OgrenciDersleriSet" EntityType="ModelFirst.OgrenciDersleri" />
+    <AssociationSet Name="OgrenciOgrenciDersleri" Association="ModelFirst.OgrenciOgrenciDersleri">
+      <End Role="Ogrenci" EntitySet="OgrenciSet" />
+      <End Role="OgrenciDersleri" EntitySet="OgrenciDersleriSet" />
+    </AssociationSet>
+    <AssociationSet Name="DersOgrenciDersleri" Association="ModelFirst.DersOgrenciDersleri">
+      <End Role="Ders" EntitySet="DersSet" />
+      <End Role="OgrenciDersleri" EntitySet="OgrenciDersleriSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Ogrenci">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adı" Type="String" Nullable="false" />
+    <Property Name="Soyadı" Type="String" Nullable="false" />
+    <Property Name="TCKimlikNo" Type="String" Nullable="false" />
+    <NavigationProperty Name="OgrenciDersleri" Relationship="ModelFirst.OgrenciOgrenciDersleri" FromRole="Ogrenci" ToRole="OgrenciDersleri" />
+  </EntityType>
+  <EntityType Name="Ders">
+    <Key>
+      <PropertyRef Name="DersId" />
+    </Key>
+    <Property Name="DersId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DersAdı" Type="String" Nullable="false" />
+    <Property Name="SınıfSeviyesi" Type="String" Nullable="false" />
+    <NavigationProperty Name="OgrenciDersleri" Relationship="ModelFirst.DersOgrenciDersleri" FromRole="Ders" ToRole="OgrenciDersleri" />
+  </EntityType>
+  <EntityType Name="OgrenciDersleri">
+    <Key>
+      <PropertyRef Name="OgrenciId" />
+      <PropertyRef Name="DersId" />
+    </Key>
+    <Property Name="OgrenciId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DersId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ogrenci" Relationship="ModelFirst.OgrenciOgrenciDersleri" FromRole="OgrenciDersleri" ToRole="Ogrenci" />
+    <NavigationProperty Name="Ders" Relationship="ModelFirst.DersOgrenciDersleri" FromRole="OgrenciDersleri" ToRole="Ders" />
+  </EntityType>
+  <Association Name="OgrenciOgrenciDersleri">
+    <End Type="ModelFirst.Ogrenci" Role="Ogrenci" Multiplicity="1" />
+    <End Type="ModelFirst.OgrenciDersleri" Role="OgrenciDersleri" Multiplicity="*" />
+  </Association>
+  <Association Name="DersOgrenciDersleri">
+    <End Type="ModelFirst.Ders" Role="Ders" Multiplicity="1" />
+    <End Type="ModelFirst.OgrenciDersleri" Role="OgrenciDersleri" Multiplicity="*" />
+  </Association>
+</Schema>
