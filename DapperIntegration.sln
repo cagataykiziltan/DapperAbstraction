@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperIntegration", "EntityFrameworkYaklasımlari\DapperIntegration.csproj", "{38E1B0A0-A646-4D7E-AFD0-FB85B445EBC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperIntegration", "DapperIntegration\DapperIntegration.csproj", "{38E1B0A0-A646-4D7E-AFD0-FB85B445EBC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

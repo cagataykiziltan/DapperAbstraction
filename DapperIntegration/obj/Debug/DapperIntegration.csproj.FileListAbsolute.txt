@@ -6,3 +6,11 @@ C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımla
 C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\DapperIntegration.csprojResolveAssemblyReference.cache
 C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\DapperIntegration.exe
 C:\Users\LENOVO\documents\visual studio 2017\Projects\EntityFrameworkYaklasımlari\EntityFrameworkYaklasımlari\obj\Debug\DapperIntegration.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\bin\Debug\DapperIntegration.exe.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\bin\Debug\DapperIntegration.exe
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\bin\Debug\DapperIntegration.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\bin\Debug\Dapper.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\bin\Debug\Dapper.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\obj\Debug\DapperIntegration.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\obj\Debug\DapperIntegration.exe
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\DapperIntegration\DapperIntegration\obj\Debug\DapperIntegration.pdb
