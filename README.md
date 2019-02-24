@@ -14,5 +14,5 @@ Before usage
 2. Go to Program.cs and change queries with your own queries and <object> with your table models you will create as a return type.
 
 
-Author :
+Author
 Mustafa Çağatay KIZILTAN
