@@ -33,8 +33,8 @@ namespace DapperIntegration
 
             var dapperQuery = microOrm.Connection.QueryMultiple("select * from SampleTable1 where id=3 select * from SampleTable2");
 
-            var book = dapperQuery.Read().FirstOrDefault();
-            var writers = dapperQuery.Read().ToList();
+            var firstQueryResult = dapperQuery.Read().FirstOrDefault();
+            var secondQueryResult = dapperQuery.Read().ToList();
 
             #endregion
 
