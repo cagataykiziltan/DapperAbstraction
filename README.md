@@ -1,5 +1,5 @@
 # DapperIntegration
-Dapper Integration with some basic query method examples by Mustafa Çağatay KIZILTAN
+Dapper abstraction with some basic query method examples by Mustafa Çağatay KIZILTAN
 
 This is a dapper integration that you can download, examine and use easily
 
